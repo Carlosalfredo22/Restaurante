@@ -1,0 +1,71 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+
+.container{
+    position:relative;
+    top: 70px;
+    left:280px;
+}
+
+img{
+    margin-left: -298px;
+    margin-top: -108px;
+}
+
+.LG{
+    top:-35px;
+    left: 10px;
+    color:#032D23;
+    font-size:35px;
+}
+
+sub{
+    top: 63px;
+    left: -189px;
+    color: red;
+    font-size: 35px;
+}
+.sub1{
+    top: 55px;
+    left: -189px;
+    color: black;
+}
+
+.sub2{
+    top: 63px;
+    left: -189px;
+    color: black;
+}
+
+input{
+    margin-left: -185px;
+}
+
+.texlg{
+    margin-left: -185px;
+}
+
+.form-check{
+    margin-left: -174px;
+}
+h6{
+    margin-top: 18px;
+    margin-left: -180px;
+}
+
+.img1{
+    background-image: url('../img/1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.img2{
+    background-image: url('../img/2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel, .carousel-inner > .item > img {
+    width: 695px;
+}

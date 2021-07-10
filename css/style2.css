@@ -1,0 +1,62 @@
+body{
+    margin:  0;
+    padding: 0;
+}
+
+.container{
+    position:relative;
+    top: 70px;
+    left:280px;
+}
+
+.h1{
+    font-size:38px;
+}
+
+sub{
+    top:0px;
+    left: -10px;
+    color:red;
+    font-size:35px;
+}
+.sub2{
+    top:0px;
+    left: 2px;
+    color:black;
+    font-size:23px;
+}
+
+.sub3{
+    top: -30px;
+    color:black;
+    left: -20px;
+}
+
+img{
+    margin-left: -395px;
+    margin-top: -108px;
+}
+
+.LG{
+    top:-35px;
+    left: 10px;
+    color:#032D23;
+    font-size:35px;
+}
+
+h6{
+    color: rgba(0, 0, 0, 0.479);
+}
+.page-header{
+    border-bottom: 2px solid #eee;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+input{
+    width:455px;
+}
+
+
