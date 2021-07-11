@@ -1,54 +1,6 @@
 <?php
 require_once 'Conexion.php';
 
-/* Nota: si quiere probar este funcionamiento solo debe de quitar los comentarios y pruebe los tres
-  y digame despues porque razon no funciona como tal las validaciones que hice con PDO... /*
-Este seria la manera indicada usando PDO para poder validar pero con el error Uncaught PDOException: SQLSTATE[42S02]:  
-Base table or view not found: 1146 Table 'restaurantsv.users' doesn't exist.
-
-if (!empty($_POST['email']) && !empty($_POST['contrasena'])) {
-  $records = $conexion->prepare('SELECT email, contrasena FROM users WHERE email=:email');
-  $records->bindParam(':email', $_POST['email']);
-  $records->execute(); //Error esta aqui es el execute que ta poblemas
-  $results = $records->fetch(PDO::FETCH_ASSOC);
-
-  $message = '';
-
-  if (count($results) > 0 && password_verify($_POST['contrasena'], $results['contrasena'])) {
-      header('Location: index2.php');
-  }else{
-      $message = 'Sorry, Those credentials do not match';
-    }
-  }
-  */
-
-
-
-/* esta es segunda forma de validar los datos con PDO pero siempre me da el mismo error Uncaught PDOException: SQLSTATE[42000]:
-  Syntax error or access violation: 1064 You have an error in your SQL syntax;
-*/
-  
-/* 
-if(!empty($_POST['email']) && !empty($_POST['contrasena'])){
-  $sql = 'SELECT*FROM restaurantsv WHERE email = :email AND contrasena = :contrasena)';
-  $stmt = $conexion->prepare($sql);
-  $stmt->bindParam(':email',$_POST['email']);
-  $contrasena = password_hash($_POST['contrasena'], PASSWORD_BCRYPT);
-  $stmt->bindParam(':contrasena', $contrasena);
-  
-  if ($stmt->execute()) { // El mismo error esta aqui tambien.
-      header("Location: index2.php");
-      $message = 'Successfully created new user';
-  }else{
-    echo '<script language="javascript">alert("Los Datos son Incorrecto...");</script>';
-      $message = 'Sorry there must have been an issue creating your accout';
-  }
-}*/
-
-/*La Unica validacion que me funcione este: pero no usa PDO pero me da estos errores
-    Warning: Undefined array key "email" in C:\xampp\htdocs\RestaurantSv\index.php on line 51
-    Warning: Undefined array key "contrasena" in C:\xampp\htdocs\RestaurantSv\index.php on line 52
-*/
     session_start();
 
     if ($_SERVER["REQUEST_METHOD"] == 'POST') {
