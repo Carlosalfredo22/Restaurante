@@ -50,10 +50,13 @@ if(!empty($_POST['email']) && !empty($_POST['contrasena'])){
     Warning: Undefined array key "contrasena" in C:\xampp\htdocs\RestaurantSv\index.php on line 52
 */
     session_start();
-    $email = $_POST['email'];
-    $contrasena = $_POST['contrasena']; 
+
+    if ($_SERVER["REQUEST_METHOD"] == 'POST') {
+      $email = $_POST['email'];
+      $contrasena = $_POST['contrasena']; 
+      $_SESSION['email']=$email;
     
-    $_SESSION['email']=$email;
+    
 
     $conexion=mysqli_connect("localhost","root","","restaurantsv");
     $consulta="SELECT*FROM restaurantsv where email='$email' and contrasena='$contrasena'";
@@ -68,11 +71,11 @@ if(!empty($_POST['email']) && !empty($_POST['contrasena'])){
       header("location:index2.php");
   
   }else{
-
-    echo"Error de auteticacion";
+    echo '<script language="javascript">alert("No es Enviando Correctamente...");</script>';
   }
     mysqli_free_result($resultado);
     mysqli_close($conexion);
+  }
 ?>
 <!DOCTYPE html>
 <html lang="es">
