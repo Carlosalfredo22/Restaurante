@@ -8,25 +8,21 @@ require_once 'Conexion.php';
       $contrasena = $_POST['contrasena']; 
       $_SESSION['email']=$email;
     
-    
-
-    $conexion=mysqli_connect("localhost","root","","restaurantsv");
-    $consulta="SELECT*FROM restaurantsv where email='$email' and contrasena='$contrasena'";
-    $resultado=mysqli_query($conexion,$consulta);
+      $conexion=mysqli_connect("localhost","root","","restaurantsv");
+      $consulta="SELECT*FROM restaurantsv where email='$email' and contrasena='$contrasena'";
+      $resultado=mysqli_query($conexion,$consulta);
   
-    
-    $filas=mysqli_num_rows($resultado);
-
+      $filas=mysqli_num_rows($resultado);
 
     if($filas){
   
       header("location:index2.php");
   
-  }else{
-    echo '<script language="javascript">alert("No es Enviando Correctamente...");</script>';
-  }
-    mysqli_free_result($resultado);
-    mysqli_close($conexion);
+    }else{
+      echo '<script language="javascript">alert("No es Enviando Correctamente...");</script>';
+    }
+      mysqli_free_result($resultado);
+      mysqli_close($conexion);
   }
 ?>
 <!DOCTYPE html>
