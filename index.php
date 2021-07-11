@@ -4,7 +4,7 @@ require_once 'Conexion.php';
 /* Nota: si quiere probar este funcionamiento solo debe de quitar los comentarios y pruebe los tres
   y digame despues porque razon no funciona como tal las validaciones que hice con PDO... /*
 Este seria la manera indicada usando PDO para poder validar pero con el error Uncaught PDOException: SQLSTATE[42S02]:  
- Base table or view not found: 1146 Table 'restaurantsv.users' doesn't exist.
+Base table or view not found: 1146 Table 'restaurantsv.users' doesn't exist.
 
 if (!empty($_POST['email']) && !empty($_POST['contrasena'])) {
   $records = $conexion->prepare('SELECT email, contrasena FROM users WHERE email=:email');
