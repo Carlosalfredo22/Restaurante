@@ -8,7 +8,6 @@ require_once 'Conexion.php';
       $contrasena = $_POST['contrasena']; 
       $_SESSION['email']=$email;
     
-      $conexion=mysqli_connect("localhost","root","","restaurantsv");
       $consulta="SELECT*FROM restaurantsv where email='$email' and contrasena='$contrasena'";
       $resultado=mysqli_query($conexion,$consulta);
   

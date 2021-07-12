@@ -1,31 +1,26 @@
 <?php
 require_once 'Conexion.php';
 
-if (isset($_POST['nombre']) && isset($_POST['apellido']) && isset($_POST['edad']) && isset($_POST['email']) && isset($_POST['contrasena'])) {
+if ($_SERVER["REQUEST_METHOD"] == 'POST') {
     
     $nombre = $_POST['nombre'];
     $apellido = $_POST['apellido'];
     $edad = $_POST['edad'];
     $email = $_POST['email'];
     $contrasena = $_POST['contrasena'];    
-
-    $consulta = $conexion->prepare("INSERT INTO restaurantsv(nombre,apellido,edad,email,contrasena) 
-    VALUES(:nombre,:apellido,:edad,:email,:contrasena)");
-        
-        
-    $consulta->bindParam(':nombre',$nombre);
-    $consulta->bindParam(':apellido',$apellido);
-    $consulta->bindParam(':edad',$edad);
-    $consulta->bindParam(':email',$email);
-    $consulta->bindParam(':contrasena',$contrasena);
-        
     
-    if($consulta->execute()){
+    $insertar = "INSERT INTO restaurantsv (nombre,apellido,edad,email,contrasena)
+    VALUES('$nombre','$apellido','$edad','$email','$contrasena')";
+    $resultado=mysqli_query($conexion,$insertar);
+
+    
+    if($resultado){
         echo '<script language="javascript">alert("Se Enviando Correctamente");</script>';
     }
     else{
         echo '<script language="javascript">alert("No es Enviando Correctamente...");</script>';
     }
+    mysqli_close($conexion);
 }
 ?>
 
