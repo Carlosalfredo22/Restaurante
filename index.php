@@ -1,8 +1,6 @@
 <?php
 require_once 'Conexion.php';
 
-    session_start();
-
     if ($_SERVER["REQUEST_METHOD"] == 'POST') {
       $email = $_POST['email'];
       $contrasena = $_POST['contrasena']; 
@@ -18,7 +16,7 @@ require_once 'Conexion.php';
       header("location:index2.php");
   
     }else{
-      echo '<script language="javascript">alert("No es Enviando Correctamente...");</script>';
+      echo '<script language="javascript">alert("Datos Incorrectos...");</script>';
     }
       mysqli_free_result($resultado);
       mysqli_close($conexion);
