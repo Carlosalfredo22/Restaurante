@@ -33,7 +33,7 @@ html { height: 100%;}
     margin-left: -220px;
     overflow-y: auto;
     overflow-x: hidden;
-    background: #1a1a1a;
+    background: #ffffff;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -89,7 +89,7 @@ html { height: 100%;}
     z-index: -1;
     height: 100%;
     width: 3px;
-    background-color: #1c1c1c;
+    background-color: #ffffff;
     -webkit-transition: width .2s ease-in;
       -moz-transition:  width .2s ease-in;
        -ms-transition:  width .2s ease-in;
@@ -114,7 +114,7 @@ html { height: 100%;}
 
 .sidebar-nav li a {
     display: block;
-    color: #ddd;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 10px 15px 10px 30px;    
 }
@@ -139,12 +139,12 @@ html { height: 100%;}
 .sidebar-brand {
     height: 65px;
     position: relative;
-    background:#212531;
-    background: linear-gradient(to right bottom, #2f3441 50%, #212531 50%);
+    background:#000000;
+    background: linear-gradient(to right bottom, #ffffff 50%, #ffffff 50%);
    padding-top: 1em;
 }
 .sidebar-brand a {
-    color: #ddd;
+    color: rgb(0, 0, 0);
 }
 .sidebar-brand a:hover {
     color: #fff;
@@ -219,7 +219,7 @@ a[href*="#contact"]::before {
 }
 a[href*="#followme"]::before {
   content: "\f099" !important;
-  color: #0084b4;
+  color: #000000;
 }
 /*-------------------------------*/
 /*       Hamburger-Cross         */
