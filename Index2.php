@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenido</title>
-    <link rel="stylesheet" type="text/css" href="../RestaurantSv/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../Restaurante/css/bootstrap.css">
 </head>
 <body>
     <H2>BIENVENIDOS AL RESTAURANTE SV</H2>
-    <button type="button" class="btn btn-outline-primary"><a href="../RestaurantSv/index.php">Regresar</a></button>
+    <button type="button" class="btn btn-outline-primary"><a href="../Restaurante/index.php">Regresar</a></button>
 
 
     <!--boostrap  min js y popper min js -->

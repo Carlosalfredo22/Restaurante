@@ -35,14 +35,14 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario2</title>
-    <link rel="stylesheet" type="text/css" href="../RestaurantSv/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../RestaurantSv/css/style2.css">
+    <link rel="stylesheet" type="text/css" href="../Restaurante/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../Restaurante/css/style2.css">
 </head>
 <body>
 <div class="container">
     <div class="row">
         <div class="px-lg-5 pt-lg-4 pb-lg-3 p-4 w-100 mb-auto">
-            <img src="../Formulario2/img/L000042.png" class="img-fluid" width="90px">
+            <img src="../Restaurante/img/L000042.png" class="img-fluid" width="90px">
             <sub class="LG">Restaurant Sv</sub>
         </div>
         <div class="col-md-6 col-md-offset-3">
@@ -101,7 +101,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
                 <!--Input de boton de enviar-->
                     <div class="btn-ground">
                         <button type="submit" class="btn btn-dark" name="btn-Enviar">Enviar</button>
-                        <button type="button" class="btn btn-outline-primary" style="margin-left: 44px;"><a href="../RestaurantSv/index.php">Regresar</a></button>
+                        <button type="button" class="btn btn-outline-primary" style="margin-left: 44px;"><a href="../Restaurante/index.php">Regresar</a></button>
                     </div>
                 </div>
             </form>

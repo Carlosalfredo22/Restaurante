@@ -30,14 +30,14 @@ require_once 'Conexion.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <!--Estilos boostrap --><!--Nota: Cambien la ruta de estilos CSS para que no haya poblemas-->
-    <link rel="stylesheet" type="text/css" href="../RestaurantSv/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../RestaurantSv/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../Restaurante/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../Restaurante/css/style.css">
 </head>
 <body>
     <div class="container">
         <div class="row justify-content-start">
                 <div class="px-lg-5 pt-lg-4 pb-lg-3 p-4 w-100 mb-auto">
-                    <img src="../php-login2/img/L000042.png" class="img-fluid" width="90px">
+                    <img src="../Restaurante/img/L000042.png" class="img-fluid" width="90px">
                     <sub class="LG">Restaurant Sv</sub>
                 </div>
                 <div class="col-md-6 col-md-offset-3">
@@ -79,7 +79,7 @@ require_once 'Conexion.php';
                             <button class="btn btn-primary" type="submit" style="margin-left: -182px;margin-right: 175px;">Enviar</button>
                           </div>
                         <!--Fin de los botones-->
-                          <h6>¿No tienes una cuenta?<a href="../RestaurantSv/formulario.php">crear cuenta</a></h6>
+                          <h6>¿No tienes una cuenta?<a href="../Restaurante/formulario.php">crear cuenta</a></h6>
                       </form>
                 </div>
                   <!--Carousel-->
@@ -119,6 +119,6 @@ require_once 'Conexion.php';
 
     <!--boostrap  min js y popper min js -->
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-      <script src="../RestaurantSv/js/bootstrap.min.js"></script>
+      <script src="../Restaurante/js/bootstrap.min.js"></script>
 </body>
 </html>
