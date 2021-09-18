@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="w-100">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
           <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -38,13 +38,13 @@
               <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
               <button class="btn btn-search position-absolute" type="submit"><i class="icon ion-md-search"></i></button>
             </form>
-          
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img src="img/user2.png" class="img-fluid rounded-circle avatar mr-2">
-                    Carlos Alfredo
+                    Nombre
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Mi Perfil</a>
@@ -57,6 +57,63 @@
             </div>
           </div>
           </nav>
+
+          <div id="content">
+              <section class="py-3">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-9">
+                          <h1 class="font-weight-bold mb-0">Bienvenidos...</h1>
+                          <p class="lead text-muted">Revisar la ultima informacion</p>
+                      </div>
+                      <div class="col-lg-3 d-flex">
+                        <button class="btn btn-primary w-100 align-self-center">Descargar reporte</button>
+                      </div>
+
+                    </div>
+                  </div>
+              </section>
+
+              <section class="bg-mix">
+                  <div class="container">
+                      <div class="card rounded-0">
+                          <div class="card-body">
+                              <div class="row">
+                                  <div class="col-lg-3 d-flex stat my-3">
+                                      <div class="mx-auto">
+                                          <h6 class="text-muted">Ingresos Mensuales</h6>
+                                          <h3 class="font-weight-bold">$50,00</h3>
+                                          <h6 class="text-success"><i class="icon ion-md-arrow-dropup-circle"></i>50.50%</h6>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-3 d-flex stat my-3">
+                                      <div class="mx-auto">
+                                          <h6 class="text-muted">Ingresos Mensuales</h6>
+                                          <h3 class="font-weight-bold">$50,00</h3>
+                                          <h6 class="text-success"><i class="icon ion-md-arrow-dropup-circle"></i>50.50%</h6>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-3 d-flex stat my-3">
+                                          <div class="mx-auto">
+                                          <h6 class="text-muted">Ingresos Mensuales</h6>
+                                          <h3 class="font-weight-bold">$50,00</h3>
+                                          <h6 class="text-success"><i class="icon ion-md-arrow-dropup-circle"></i>50.50%</h6>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-3 d-flex my-3">
+                                      <div class="mx-auto">
+                                          <h6 class="text-muted">Ingresos Mensuales</h6>
+                                          <h3 class="font-weight-bold">$50,00</h3>
+                                          <h6 class="text-success"><i class="icon ion-md-arrow-dropup-circle"></i>50.50%</h6>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+          </div>
+
         </div>
     </div>
 

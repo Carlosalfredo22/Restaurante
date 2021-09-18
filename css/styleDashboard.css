@@ -19,8 +19,23 @@ body{
     background-color: var(--light) !important;
 }
 
+.bg-mix{
+    background: linear-gradient(180deg, var(--light) 50%, var(--grey) 0);
+}
+
 a:hover{
     text-decoration: none;
+}
+
+.btn{
+    border: 0;
+}
+.btn-primary{
+    background-color: var(--primary);
+}
+
+.btn-primary:hover{
+    background-color: var(--primary);
 }
 
 #sidebar-container{
@@ -41,4 +56,7 @@ a:hover{
 
 .avatar{
     max-width: 35px;
+}
+.stat{
+    border-right: 1px solid var(--grey);
 }
