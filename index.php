@@ -3,18 +3,18 @@ require_once 'Conexion.php';
 
     if ($_SERVER["REQUEST_METHOD"] == 'POST') {
       $email = $_POST['email'];
-      $contrasena = $_POST['contrasena']; 
+      $contrasena = $_POST['contrasena'];
       $_SESSION['email']=$email;
-    
+
       $consulta="SELECT*FROM restaurantsv where email='$email' and contrasena='$contrasena'";
       $resultado=mysqli_query($conexion,$consulta);
-  
+
       $filas=mysqli_num_rows($resultado);
 
     if($filas){
-  
-      header("location:index2.php");
-  
+
+      header("location:Principal.php");
+
     }else{
       echo '<script language="javascript">alert("Datos Incorrectos...");</script>';
     }
@@ -66,7 +66,7 @@ require_once 'Conexion.php';
                           </div>
                         </div>
                         <br>
-                          <!--Checkbox-->  
+                          <!--Checkbox-->
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault">

@@ -2,22 +2,22 @@
 require_once 'Conexion.php';
 
 if ($_SERVER["REQUEST_METHOD"] == 'POST') {
-    
+
     $nombre = $_POST['nombre'];
     $apellido = $_POST['apellido'];
     $edad = $_POST['edad'];
     $email = $_POST['email'];
-    $contrasena = $_POST['contrasena'];    
-    
+    $contrasena = $_POST['contrasena'];
+
     //$conexion=mysqli_connect('localhost','root','','restaurantsv');
-    /*Esta conexion mysqli_connect permite crear una conexion en el mismo archivo, 
+    /*Esta conexion mysqli_connect permite crear una conexion en el mismo archivo,
     sin la necesidad de crear un archivo aparte, para la conexion que permita
         conectar a la base de datos directamente*/
     $insertar = "INSERT INTO restaurantsv (nombre,apellido,edad,email,contrasena)
     VALUES('$nombre','$apellido','$edad','$email','$contrasena')";
     $resultado=mysqli_query($conexion,$insertar);
 
-    
+
     if($resultado){
         echo '<script language="javascript">alert("Se Enviando Correctamente");</script>';
     }

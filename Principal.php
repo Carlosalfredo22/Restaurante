@@ -50,7 +50,7 @@
                     <a class="dropdown-item" href="#">Mi Perfil</a>
                     <a class="dropdown-item" href="#">Suscripcion</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Cerrar sesion</a>
+                    <a class="dropdown-item" href="../Restaurante/index.php">Cerrar sesion</a>
                   </div>
                 </li>
               </ul>
