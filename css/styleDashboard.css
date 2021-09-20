@@ -23,6 +23,10 @@ body{
     background: linear-gradient(180deg, var(--light) 50%, var(--grey) 0);
 }
 
+.bg-grey{
+    background-color: var(--grey) !important;
+}
+
 a:hover{
     text-decoration: none;
 }
@@ -59,4 +63,13 @@ a:hover{
 }
 .stat{
     border-right: 1px solid var(--grey);
+}
+
+@media (max-width: 768px) {
+    #sidebar-container {
+        display: none;
+    }
+    .stat {
+        border: 0;
+    }
 }
